@@ -102,7 +102,8 @@ public class Leelaz {
 
         initializeStreams();
 
-        if (isCorrectVersion()) {
+        //if (isCorrectVersion()) {
+	if (true) {  // don't check, will fail on slow machines
             // start a thread to continuously read Leelaz output
             new Thread(this::read).start();
         } else {
